@@ -1,6 +1,7 @@
 namespace Settings {
     // Walls
-    const float WALL_SPEED = -1;
+    const float WALL_SPEED = -3;
+    const float WALL_SPEED_EQUALS = 3;
     const unsigned int WALL_START_X = 100;
     const unsigned int WALL_MIN_Y = 20;
     const unsigned int WALL_MAX_Y = 35;

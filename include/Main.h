@@ -9,7 +9,7 @@
 
 class Main {
     public:
-    
+
     Objects::GameObject wall_1 = { 
         "Wall_1",
         Physic2D::Tags::Default,
@@ -63,7 +63,7 @@ class Main {
             if (Physic2D::IntersectionRect(player.rect, wall_1.rect) || player.rect.y <= 0 || player.rect.y + player.rect.height >= Settings::DEFAULT_SCREEN_HEIGHT)
                 b_isGame = false;
 
-            if (player.rect.x == wall_1.rect.x + wall_1.rect.width)
+            if (player.rect.x == wall_1.rect.x + wall_1.rect.width - Settings::WALL_SPEED_EQUALS)
                 counter++;
 
             if (wall_1.rect.x <= 0 - wall_1.rect.width)
