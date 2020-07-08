@@ -22,9 +22,5 @@ namespace Settings {
         const unsigned int CURSOR_COUNTER_GAME_X = 2, CURSOR_COUNTER_GAME_Y = 2, FONT_SIZE_COUNTER_GAME = 1;
         
         const unsigned int CURSOR_PRESS_MENU_X = 0, CURSOR_PRESS_MENU_Y = 40, FONT_SIZE_PRESS_MENU = 1;
-
-        // Sprites
-        const unsigned int DEFAULT_CHARACTER_X = 6, DEFAULT_CHARACTER_Y = 1;
-        const unsigned int DEFAULT_ITEM_X = 0, DEFAULT_ITEM_Y = 32;
     };
 };

@@ -1,13 +1,13 @@
 namespace Physic2D {
     namespace Tags {
-        static const unsigned char Default[] = "Default";
-        static const unsigned char Player[] = "Player";
-        static const unsigned char Coin[] = "Coin";
-        static const unsigned char Wall[] = "Wall";
+        static const char Default[] = "Default";
+        static const char Player[] = "Player";
+        static const char Coin[] = "Coin";
+        static const char Wall[] = "Wall";
     };
 
     namespace Layers {
-        static const unsigned char Default[] = "Default";
+        static const char Default[] = "Default";
     };
 
     struct Vector2 {

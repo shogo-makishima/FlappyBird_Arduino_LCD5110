@@ -2,7 +2,7 @@
 
 namespace Objects {
     struct GameObject {
-        char* name, tag, layer;
+        const char *name, *tag, *layer;
         Physic2D::Rect rect;
         Physic2D::RigidBody2D rigidbody2D;
         bool isActive;
