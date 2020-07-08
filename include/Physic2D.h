@@ -10,11 +10,15 @@ namespace Physic2D {
         static const unsigned char Default[] = "Default";
     };
 
-    struct Vector2  {
-        float x, y;
+    struct Vector2 {
+        float x;
+        float y;
 
-        
+        Vector2(float g_x, float g_y) {
+            x = g_x, y = g_y;
+        }
     };
+    
     
 
     struct Rect {
@@ -27,7 +31,9 @@ namespace Physic2D {
     struct RigidBody2D {
         float gavityScale;
         bool isKinematic;
-        Vector2 velocity;
+        Physic2D::Vector2 velocity = Vector2(0, 0);
+        Physic2D::Vector2 drag = Vector2(0, 0.2);
+        Physic2D::Vector2 maxVelocity = Vector2(0, 1);
 
         RigidBody2D(float g_gravityScale, bool g_isKinematic) {
             gavityScale = g_gravityScale;

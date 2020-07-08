@@ -9,7 +9,7 @@
 
 class Main {
     public:
-
+    
     Objects::GameObject wall_1 = { 
         "Wall_1",
         Physic2D::Tags::Default,
@@ -23,10 +23,10 @@ class Main {
         "Player",
         Physic2D::Tags::Player,
         Physic2D::Layers::Default,
-        Physic2D::Rect(Settings::PLAYER_START_X, Settings::PLAYER_START_Y, 12, 8),
+        Physic2D::Rect(Settings::PLAYER_START_X, Settings::PLAYER_START_Y, 12, 7),
         Physic2D::RigidBody2D(Settings::PLAYER_GRAVITY, false),
         true,
-        Sprites::Character::Car
+        Sprites::Character::Helicopter
     };
     
     bool b_isGame = false;

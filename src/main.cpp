@@ -40,7 +40,7 @@ void loop() {
     } else {
         Display.setTextSize(Settings::UI::FONT_SIZE_COUNTER_GAME);
         Display.setCursor(Settings::UI::CURSOR_COUNTER_GAME_X, Settings::UI::CURSOR_COUNTER_GAME_Y);
-        Display.print("Result: " + String(GAME.counter));
+        Display.print(String(GAME.counter));
 
         Display.drawBitmap(GAME.wall_1.rect.x, GAME.wall_1.rect.y, GAME.wall_1.Sprite, GAME.wall_1.rect.width, GAME.wall_1.rect.height, WHITE);
         Display.drawBitmap(GAME.player.rect.x, GAME.player.rect.y, GAME.player.Sprite, GAME.player.rect.width, GAME.player.rect.height, WHITE);
@@ -51,7 +51,7 @@ void loop() {
 
             switch (t_char) {
             case 'w':
-                GAME.player.Translate(0, -5);
+                GAME.player.Translate(0, -2, true);
                 break;
             default:
                 break;

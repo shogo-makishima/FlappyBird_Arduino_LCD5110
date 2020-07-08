@@ -135,5 +135,15 @@ namespace Sprites {
             0xff, 0xf0, 
             0x80, 0x00
         };
+
+        static const unsigned char PROGMEM Helicopter[] {
+            0x1f, 0xf0, 
+            0x81, 0x00, 
+            0xff, 0xe0, 
+            0x87, 0x90, 
+            0x03, 0xf0, 
+            0x01, 0xe0, 
+            0x06, 0x10
+        };
     }
 };

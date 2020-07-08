@@ -2,12 +2,13 @@ namespace Settings {
     // Walls
     const float WALL_SPEED = -1;
     const unsigned int WALL_START_X = 100;
-    const unsigned int WALL_MIN_Y = 15;
+    const unsigned int WALL_MIN_Y = 20;
     const unsigned int WALL_MAX_Y = 35;
 
     // Player
     const unsigned int PLAYER_START_X = 5, PLAYER_START_Y = 24;
     const float PLAYER_GRAVITY = 1;
+    const float PLAYER_MAX_VELOCITY_Y = 2;
 
     // Other
     const unsigned int DEFAULT_TIMER_PAUSE = 100;
@@ -17,7 +18,7 @@ namespace Settings {
     namespace UI {
         // Cursor
         const unsigned int CURSOR_COUNTER_MENU_X = 0, CURSOR_COUNTER_MENU_Y = 24, FONT_SIZE_COUNTER_MENU = 1;
-        const unsigned int CURSOR_COUNTER_GAME_X = 0, CURSOR_COUNTER_GAME_Y = 0, FONT_SIZE_COUNTER_GAME = 1;
+        const unsigned int CURSOR_COUNTER_GAME_X = 2, CURSOR_COUNTER_GAME_Y = 2, FONT_SIZE_COUNTER_GAME = 1;
         
         const unsigned int CURSOR_PRESS_MENU_X = 0, CURSOR_PRESS_MENU_Y = 40, FONT_SIZE_PRESS_MENU = 1;
 
