@@ -18,8 +18,6 @@ namespace Physic2D {
             x = g_x, y = g_y;
         }
     };
-    
-    
 
     struct Rect {
         float x, y, width, height;

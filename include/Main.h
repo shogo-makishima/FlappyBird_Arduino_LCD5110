@@ -9,14 +9,14 @@
 
 class Main {
     public:
-
     Objects::GameObject wall_1 = { 
         "Wall_1",
         Physic2D::Tags::Default,
         Physic2D::Layers::Default,
         Physic2D::Rect(30, 30, 16, 48),
         Physic2D::RigidBody2D(0, true),
-        true, Sprites::Walls::Wall
+        true,
+        Sprites::Walls::Wall
     };
 
     Objects::GameObject player = { 
@@ -73,10 +73,6 @@ class Main {
                 timer.Reset();
             }
         }
-    }
-
-    void DebugParametrsLife() {
-
     }
 };
 

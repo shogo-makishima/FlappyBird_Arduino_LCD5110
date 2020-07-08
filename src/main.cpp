@@ -21,8 +21,6 @@ void loop() {
     Display.clearDisplay();
 
     Display.fillScreen(BLACK);
-
-    Display.setTextSize(1);
     Display.setTextColor(WHITE);
 
     if (!GAME.b_isGame) {
@@ -36,7 +34,6 @@ void loop() {
 
         if (Serial.available() > 0 && Serial.read() == 'w')
             GAME.Start();
-
     } else {
         Display.setTextSize(Settings::UI::FONT_SIZE_COUNTER_GAME);
         Display.setCursor(Settings::UI::CURSOR_COUNTER_GAME_X, Settings::UI::CURSOR_COUNTER_GAME_Y);
